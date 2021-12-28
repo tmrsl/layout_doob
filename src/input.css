@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    height: 100%;
+  }
+}
+
+.autocomplete:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #F4FAFE inset !important;
+    -webkit-text-fill-color: #314584 !important;
+}

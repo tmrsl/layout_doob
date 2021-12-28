@@ -1,0 +1,22 @@
+{
+  "name": "doob",
+  "version": "1.0.0",
+  "description": "",
+  "main": "-",
+  "dependencies": {
+    "tailwindcss": "^3.0.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "-"
+  },
+  "repository": {
+    "type": "git",
+    "url": "-"
+  },
+  "keywords": [
+    "-"
+  ],
+  "author": "Mira T",
+  "license": "ISC"
+}

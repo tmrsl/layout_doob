@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap"
+      rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>| Doob</title>
+  </head>
+
+  <body class="text-18 font-semibold">
+    <header class="p-20">
+      <div class="flex items-center justify-between">
+        <a
+          href="#"
+          id="home"
+        >
+          <img
+            src="../icons/logo.svg"
+            alt="Doob-logo"
+          >
+        </a>
+
+        <ul class="hidden sm:visible">
+          <li>
+            <a
+              href="#home"
+              data-focus="disabled"
+            >
+              Home.
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#about-us"
+              data-focus="disabled"
+            >
+              About us.
+            </a>
+          </li>
+  
+  
+          <li>
+            <a
+              href="#portfolio"
+              data-focus="disabled"
+            >
+              Portfolio.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#blog"
+              data-focus="disabled"
+            >
+              Blog.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#contact-us"
+              data-focus="disabled"
+            >
+              Contact us.
+            </a>
+          </li>
+        </ul>
+
+        <a
+          href="#menu"
+          class="bg-menu-open w-8 h-8 bg-contain bg-center bg-no-repeat"
+          data-focus="disabled">
+        </a>
+
+        <!-- <div class="flex gap-4">
+          <form action="">
+            <select name="language-picker" id="language-picker" class="text-[#314584] uppercase">
+              <option lang="en" value="english" selected>En</option>
+              <option lang="de" value="deutsch">De</option>
+              <option lang="fr" value="francais">Fr</option>
+              <option lang="it" value="italiano">It</option>
+            </select>
+          </form>
+  
+          <a
+            href="#contact-us"
+            class="font-semibold"
+            data-focus="disabled"
+          >
+            Contact Us
+          </a>
+        </div> -->
+      </div>
+    </header>
+
+    <!-- translate-x-full / translate-x-0 -->
+    <nav class="absolute inset-0 h-full w-full flex flex-col p-20 bg-white sm:overflow-hidden transition translate-x-full">
+      <a
+        class="absolute top-4 right-4 bg-menu-close w-8 h-8 bg-contain bg-center bg-no-repeat translate-x-0"
+        href="../icons/menu-close.svg"
+        data-focus="enabled"
+      >
+      </a>
+
+      <ul class="flex flex-col gap-4 text-[#314584]">
+        <li>
+          <a
+            href="#home"
+            class="p-4"
+            data-focus="enabled"
+          >
+            Home.
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#about-us"
+            class="p-4"
+            data-focus="enabled"
+          >
+            About us.
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#portfolio"
+            class="p-4"
+            data-focus="enabled"
+          >
+            Portfolio.
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#blog"
+            class="p-4"
+            data-focus="enabled"
+          >
+            Blog.
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="#contact-us"
+            class="p-4"
+            data-focus="enabled"
+          >
+            Contact us.
+          </a>
+        </li>
+      </ul>
+
+      <div class="flex justify-between mt-4">
+        <select name="language-picker" id="language-picker" class="p-4 text-[#314584] font-semibold uppercase">
+          <option lang="en" value="english" selected>En</option>
+          <option lang="de" value="deutsch">De</option>
+          <option lang="fr" value="francais">Fr</option>
+          <option lang="it" value="italiano">It</option>
+        </select>
+
+        <a
+          href="#contact-us"
+          class="flex items-center gap-2 p-4 text-[#FF3946]"
+          data-focus="disabled"
+        >
+          Contact Us
+          <img
+            src="../icons/arrow.svg"
+            alt="arrow-right"
+            class="w-4 h-4 bg-contain bg-center bg-no-repeat"
+          >
+        </a>
+      </div>
+    </nav>
+
+    <main class="p-20">
+      <div class="mb-16">
+        <h1 class="mb-4 text-48 text-[#314584]">
+          The Spirit of 
+          <br>
+          Digital Agency.
+        </h1>
+  
+        <p class="mb-8 text-[#6E757A] font-normal">
+          Vestibulum ac diam sit amet quam vehicula elementum amet est on dui.
+          Nulla porttitor accumsan tincidunt.
+        </p>
+  
+        <a
+          href="#"
+          data-focus="disabled"
+          class="block mb-4 p-16 text-center bg-[#FF3946] text-[#FFFFFF] rounded-full"
+        >
+          More About us
+        </a>
+  
+        <a
+          href="#"
+          class="block p-16 text-center text-[#314584]"
+          data-focus="disabled"
+        >
+          Get in Touch.
+        </a>
+      </div>
+
+      <div class="mb-16">
+        <h2 class="mb-8 text-36 text-[#314584]">
+          See some of our
+          <br>
+          Creative work.
+        </h2>
+
+        <div class="mb-6 grid grid-cols-1 sm:grid-cols-3 gap-7">
+          <div class="w-full min-h-[280px] bg-gray-300"></div>
+          <div class="w-full min-h-[280px] bg-gray-300"></div>
+          <div class="w-full min-h-[280px] bg-gray-300"></div>
+          <div class="w-full min-h-[280px] bg-gray-300"></div>
+          <div class="w-full min-h-[280px] bg-gray-300"></div>
+          <div class="w-full min-h-[280px] bg-gray-300"></div>
+        </div>
+
+        <a
+          href="#"
+          class="block p-16 text-center text-[#FF3946]"
+          data-focus="disabled"
+        >
+          See More of These.
+        </a>
+      </div>
+
+      <div class="mb-16">
+        <a
+          href=""
+          class="text-[#FF3946] uppercase"
+          data-focus="disabled"
+        >
+          Contact us
+        </a>
+
+        <h2 class="mb-8 text-36 text-[#314584]">
+          Get in Touch
+        </h2>
+
+        <form
+          action=""
+          method="get"
+        >
+          <input
+            class="w-full mb-4 p-16 border-none outline-none bg-[#F4FAFE] placeholder-[#314584] text-[#314584] font-semibold autocomplete"
+            name="email"
+            type="email"
+            placeholder="Your email"
+            data-focus="disabled"
+            required
+          >
+
+          <input
+            class="w-full mb-4 p-16 border-none outline-none bg-[#F4FAFE] placeholder-[#314584] text-[#314584] font-semibold autocomplete"
+            name="subject"
+            type="text"
+            placeholder="Subject"
+            data-focus="disabled"
+            required
+          >
+
+          <textarea
+            class="w-full mb-10 p-16 border-none outline-none bg-[#F4FAFE] placeholder-[#314584] text-[#314584] font-semibold resize-none autocomplete"
+            name="message"
+            rows="2"
+            placeholder="Message here..."
+            data-focus="disabled"
+            required></textarea>
+
+          <button
+            class="w-full p-16 text-center bg-[#FF3946] text-[#FFFFFF] rounded-full"
+            data-focus="disabled"
+          >
+            Send Message
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="p-20 pt-24 bg-[#314584] text-center">
+      <a
+          href="#"
+          class="text-[#FFFFFF]"
+          data-focus="disabled"
+        >
+          DOOB
+        </a>
+
+        <h2 class="mb-10 text-36 text-[#FF3946]">
+          CREATIVITY ABOVE
+        </h2>
+
+        <ul class="mb-10 flex flex-col gap-4 text-[#FFFFFF]">
+          <li>
+            <a
+              href="#home"
+              class="p-4"
+              data-focus="enabled"
+            >
+              Home.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#about-us"
+              class="p-4"
+              data-focus="enabled"
+            >
+              About us.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#portfolio"
+              class="p-4"
+              data-focus="enabled"
+            >
+              Portfolio.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#blog"
+              class="p-4"
+              data-focus="enabled"
+            >
+              Blog.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#contact-us"
+              class="p-4"
+              data-focus="enabled"
+            >
+              Contact us.
+            </a>
+          </li>
+        </ul>
+
+        <p class="mb-10 text-14 font-normal text-[#FFFFFF]">
+          © 2019 - Doob, All Right Reserved
+        </p>
+
+        <div class="mb-10 flex items-center justify-center gap-8">
+          <a
+            href="https://www.facebook.com"
+            class="bg-facebook w-8 h-8 bg-contain bg-center bg-no-repeat"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-focus="disabled">
+          </a>
+
+          <a
+            href="https://twitter.com"
+            class="bg-twitter w-8 h-8 bg-contain bg-center bg-no-repeat"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-focus="disabled">
+          </a>
+
+          <a
+            href="https://dribbble.com"
+            class="bg-dribbble w-8 h-8 bg-contain bg-center bg-no-repeat"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-focus="disabled">
+          </a>
+        </div>
+    </footer>
+  </body>
+</html>
