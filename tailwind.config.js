@@ -26,15 +26,15 @@ module.exports = {
       },
 
       backgroundImage: {
-        'menu-open': "url('./../icons/menu-open.svg')",
-        'menu-close': "url('./../icons/menu-close.svg')",
-        'facebook': "url('./../icons/Facebook.svg')",
-        'facebook-hover': "url('./../icons/Facebook_hover.svg')",
-        'twitter': "url('./../icons/Twitter.svg')",
-        'twitter-hover': "url('./../icons/Twitter_hover.svg')",
-        'dribble': "url('./../icons/Dribble.svg')",
-        'dribble-hover': "url('./../icons/Dribble_hover.svg')",
-        'slider-item': "url('./../icons/slider-item.png)"
+        'menu-open': "url('./icons/menu-open.svg')",
+        'menu-close': "url('./icons/menu-close.svg')",
+        'facebook': "url('./icons/Facebook.svg')",
+        'facebook-hover': "url('./icons/Facebook_hover.svg')",
+        'twitter': "url('./icons/Twitter.svg')",
+        'twitter-hover': "url('./icons/Twitter_hover.svg')",
+        'dribble': "url('./icons/Dribble.svg')",
+        'dribble-hover': "url('./icons/Dribble_hover.svg')",
+        'slider-item': "url('./icons/slider-item.png)"
       }
     },
     screens: {
