@@ -10,5 +10,4 @@ node_modules
 
 # Generated files
 .cache
-dist
 .parcel-cache

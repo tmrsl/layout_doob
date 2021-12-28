@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap"
+      rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <title>| Doob</title>
+    <link
+      type="image/x-icon"
+      rel="icon"
+      href="./icons/logo.svg"
+    >
+  </head>
+
+  <body class="text-18 font-semibold overflow-x-hidden">
+    <header class="mt-[40px] h-[70px] flex items-center">
+      <div class="flex justify-between items-center container sm:container md:container mx-auto">
+        <a
+          href="#"
+          class="outline-none sm:mr-[88px]"
+          id="home"
+        >
+          <img
+            src="../icons/logo.svg"
+            alt="Doob-logo"
+          >
+        </a>
+
+        <div class="hidden w-full md:flex md:justify-between md:items-center">
+          <ul class="md:flex md:justify-start md:gap-[44px] md:text-[#314584]">
+            <li>
+              <a
+                href="#home"
+                class="p-4 hover:text-[#FF3946] transition duration-300"
+                data-focus="disabled"
+              >
+                Home.
+              </a>
+            </li>
+    
+            <li>
+              <a
+                href="#about-us"
+                class="p-4 hover:text-[#FF3946] transition duration-300"
+                data-focus="disabled"
+              >
+                About us.
+              </a>
+            </li>
+    
+            <li>
+              <a
+                href="#portfolio"
+                class="p-4 hover:text-[#FF3946] transition duration-300"
+                data-focus="disabled"
+              >
+                Portfolio.
+              </a>
+            </li>
+    
+            <li>
+              <a
+                href="#blog"
+                class="p-4 hover:text-[#FF3946] transition duration-300"
+                data-focus="disabled"
+              >
+                Blog.
+              </a>
+            </li>
+    
+            <li>
+              <a
+                href="#contact-us"
+                class="p-4 hover:text-[#FF3946] transition duration-300"
+                data-focus="disabled"
+              >
+                Contact us.
+              </a>
+            </li>
+          </ul>
+
+          <div class="md:flex md:justify-end md:gap-[44px]">
+            <select name="language-picker" id="language-picker" class="text-[#314584] font-semibold uppercase outline-none cursor-pointer">
+              <option lang="en" value="english" selected>En</option>
+              <option lang="de" value="deutsch">De</option>
+              <option lang="fr" value="francais">Fr</option>
+              <option lang="it" value="italiano">It</option>
+            </select>
+    
+            <a
+              href="#contact-us"
+              class="flex items-center gap-2 p-[20px] text-[#FF3946] hover:shadow-lg hover:rounded-md transition duration-300"
+              data-focus="disabled"
+            >
+              Contact Us
+              <img
+                src="../icons/arrow.svg"
+                alt="arrow-right"
+                class="w-6 h-4 bg-contain bg-center bg-no-repeat"
+              >
+            </a>
+          </div>
+        </div>
+
+        <a
+          class="visible md:hidden bg-menu-open w-8 h-8 bg-contain bg-center bg-no-repeat translate-x-0"
+          href="#menu"
+          data-focus="disabled"
+        >
+        </a>
+      </div>
+    </header>
+
+    <div id="mobile-menu" class="absolute inset-0 h-full w-full transition translate-x-full">
+      <nav
+        class="mt-[40px] h-full w-full flex flex-col p-20 bg-white md:overflow-hidden"
+      >
+        <a
+          class="absolute top-6 right-6 bg-menu-close w-6 h-6 bg-contain bg-center bg-no-repeat translate-x-0"
+          href="#"
+          data-focus="enabled"
+        >
+        </a>
+  
+        <ul class="flex flex-col gap-8 text-[#314584]">
+          <li>
+            <a
+              href="#home"
+              class="p-4"
+              data-focus="enabled"
+            >
+              Home.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#about-us"
+              class="p-4"
+              data-focus="enabled"
+            >
+              About us.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#portfolio"
+              class="p-4"
+              data-focus="enabled"
+            >
+              Portfolio.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#blog"
+              class="p-4"
+              data-focus="enabled"
+            >
+              Blog.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#contact-us"
+              class="p-4"
+              data-focus="enabled"
+            >
+              Contact us.
+            </a>
+          </li>
+        </ul>
+  
+        <div class="flex justify-between mt-6">
+          <select name="language-picker" id="language-picker" class="p-4 text-[#314584] font-semibold uppercase outline-none cursor-pointer">
+            <option lang="en" value="english" selected>En</option>
+            <option lang="de" value="deutsch">De</option>
+            <option lang="fr" value="francais">Fr</option>
+            <option lang="it" value="italiano">It</option>
+          </select>
+  
+          <a
+            href="#contact-us"
+            class="flex items-center gap-2 p-4 text-[#FF3946]"
+            data-focus="enabled"
+          >
+            Contact Us
+            <img
+              src="../icons/arrow.svg"
+              alt="arrow-right"
+              class="w-4 h-4 bg-contain bg-center bg-no-repeat"
+            >
+          </a>
+        </div>
+      </nav>
+    </div>
+
+    <main>
+      <div class="container sm:p-0 sm:container md:container mx-auto">
+        <div class="mt-16 sm:mt-[265px] md:items-center md:flex md:justify-between" id="about-us">
+          <div class="md:min-w-[482px]">
+            <h1 class="mb-4 text-48 text-[#314584] sm:mb-44 sm:text-73">
+              The Spirit of 
+              <br>
+              Digital Agency.
+            </h1>
+      
+            <p class="mb-8 text-[#6E757A] font-normal sm:mb-40">
+              Vestibulum ac diam sit amet quam vehicula elementum amet
+              <br>
+              est on dui. Nulla porttitor accumsan tincidunt.
+            </p>
+      
+            <div class="flex flex-col sm:flex-row">
+              <a
+                href="#"
+                data-focus="disabled"
+                class="block mb-4 p-16 text-center bg-[#FF3946] text-[#FFFFFF] rounded-full sm:max-w-[203px] sm:w-full sm:mr-[34px] hover:shadow-2xl transition duration-300"
+              >
+                More About us
+              </a>
+        
+              <a
+                href="#"
+                class="block pt-16 pb-16 text-center text-[#314584] hover:text-[#FF3946] transition duration-300"
+                data-focus="disabled"
+              >
+                Get in Touch.
+              </a>
+            </div>
+          </div>
+
+          <div class="hidden md:block max-w-[640px] translate-x-20">
+            <div class="slider md:m-w-[200px] md:w-full">
+              <div class="bg-slider-item">
+                <img src="./icons/slider-item.png" class="w-[660px]" alt="slider-item-1">
+              </div>
+              <div class="bg-slider-item">
+                <img src="./icons/slider-item.png" class="w-[660px]" alt="slider-item-2">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="mt-16 sm:mt-[339px]" id="portfolio">
+          <h2 class="mb-8 text-36 text-[#314584] sm:text-48 sm:mb-[88px]">
+            See some of our
+            <br>
+            Creative work.
+          </h2>
+  
+          <div class="mb-6 grid grid-cols-1 gap-6 sm:grid-cols-3 sm:gap-[28px] sm:mb-[56px]">
+            <div class="w-full min-h-[280px] bg-gray-300 cursor-pointer"></div>
+            <div class="w-full min-h-[280px] bg-gray-300 cursor-pointer"></div>
+            <div class="w-full min-h-[280px] bg-gray-300 cursor-pointer"></div>
+            <div class="w-full min-h-[280px] bg-gray-300 cursor-pointer"></div>
+            <div class="w-full min-h-[280px] bg-gray-300 cursor-pointer"></div>
+            <div class="w-full min-h-[280px] bg-gray-300 cursor-pointer"></div>
+          </div>
+  
+          <div class="flex justify-center">
+            <a
+              href="#"
+              id="blog"
+              class="block p-16 text-center text-[#FF3946] sm:max-w-[203px] sm:w-full sm:mr-[34px] hover:text-[#314584] hover:shadow-lg hover:rounded-lg transition duration-300"
+              data-focus="disabled"
+            >
+              See More of These.
+            </a>
+          </div>
+        </div>
+  
+        <div class="mt-16 mb-8 sm:mt-[302px] sm:mb-[57px]" id="contact-us">
+          <a
+            href="#"
+            class="block text-[#FF3946] uppercase sm:mb-[31px]"
+            data-focus="disabled"
+          >
+            Contact us
+          </a>
+  
+          <h2 class="mb-8 text-36 text-[#314584] sm:mb-[55px] sm:text-48">
+            Get in Touch
+          </h2>
+  
+          <form
+            action=""
+            method="get"
+          >
+            <div class="mb-[16px] flex flex-col gap-[16px] sm:mb-[34px] sm:flex-row sm:gap-[29px]">
+              <input
+                class="w-full p-16 border-none outline-none bg-[#F4FAFE] placeholder-[#314584] text-[#314584] font-semibold autocomplete sm:max-w-[573px] sm:w-full"
+                name="email"
+                type="email"
+                placeholder="Your email"
+                data-focus="disabled"
+                required
+              >
+    
+              <input
+                class="w-full p-16 border-none outline-none bg-[#F4FAFE] placeholder-[#314584] text-[#314584] font-semibold autocomplete sm:max-w-[573px] sm:w-full"
+                name="subject"
+                type="text"
+                placeholder="Subject"
+                data-focus="disabled"
+                required
+              >
+            </div>
+  
+            <textarea
+              class="w-full mb-10 p-16 border-none outline-none bg-[#F4FAFE] placeholder-[#314584] text-[#314584] font-semibold resize-none autocomplete sm:mb-[63px] sm:max-w-[1173px] sm:w-full"
+              name="message"
+              rows="3"
+              placeholder="Message here..."
+              data-focus="disabled"
+              required></textarea>
+  
+            <div class="flex justify-center">
+              <button
+                class="w-full p-16 text-center bg-[#FF3946] text-[#FFFFFF] rounded-full sm:max-w-[203px] sm:w-full hover:shadow-2xl transition duration-300"
+                data-focus="disabled"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer class="pt-24 pb-20 bg-[#314584] text-center sm:pt-[72px]">
+      <div class="container sm:p-0 sm:container md:container mx-auto">
+        <a
+          href="#"
+          class="block text-[#FFFFFF] sm:mb-[10px] hover:text-[#FF3946] transition duration-300"
+          data-focus="disabled"
+        >
+          DOOB
+        </a>
+
+        <h2 class="mb-10 text-36 text-[#FF3946] sm:mb-[47px] sm:text-48">
+          CREATIVITY ABOVE
+        </h2>
+
+        <ul class="mb-10 flex flex-col justify-center gap-8 text-[#FFFFFF] sm:mb-[54px] sm:flex-row sm:gap-[44px]">
+          <li>
+            <a
+              href="#home"
+              class="p-4 hover:text-[#FF3946] transition duration-300"
+              data-focus="disabled"
+            >
+              Home.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#about-us"
+              class="p-4 hover:text-[#FF3946] transition duration-300"
+              data-focus="disabled"
+            >
+              About us.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#portfolio"
+              class="p-4 hover:text-[#FF3946] transition duration-300"
+              data-focus="disabled"
+            >
+              Portfolio.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#blog"
+              class="p-4 hover:text-[#FF3946] transition duration-300"
+              data-focus="disabled"
+            >
+              Blog.
+            </a>
+          </li>
+  
+          <li>
+            <a
+              href="#contact-us"
+              class="p-4 hover:text-[#FF3946] transition duration-300"
+              data-focus="disabled"
+            >
+              Contact us.
+            </a>
+          </li>
+        </ul>
+
+        <p class="mb-10 text-14 font-normal text-[#FFFFFF] sm:mb-[38px]">
+          © 2019 - Doob, All Right Reserved
+        </p>
+
+        <div class="mb-10 flex items-center justify-center gap-8 sm:mb-[52px] sm:gap-[72px]">
+          <a
+            href="https://www.facebook.com"
+            class="bg-facebook w-8 h-8 bg-contain bg-center bg-no-repeat hover:bg-facebook-hover transition-all duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-focus="disabled">
+          </a>
+
+          <a
+            href="https://twitter.com"
+            class="bg-twitter w-8 h-8 bg-contain bg-center bg-no-repeat hover:bg-twitter-hover transition-all duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-focus="disabled">
+          </a>
+
+          <a
+            href="https://dribble.com"
+            class="bg-dribble w-8 h-8 bg-contain bg-center bg-no-repeat hover:bg-dribble-hover transition-all duration-300"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-focus="disabled">
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
