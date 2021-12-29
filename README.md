@@ -9,4 +9,4 @@ Features
 - Form validation and friendly navigation;
 
 Technology stack
-- HTML5, Tailwind, JS.
+- HTML5,  CSS framework Tailwind, JS.
